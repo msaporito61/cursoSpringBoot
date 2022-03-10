@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 //import org.springframework.web.bind.annotation.RequestMapping;
-
-@FeignClient(name= "truck-service", url = "http://localhost:8002/truck")
+//, url = "http://localhost:8002/truck"
+@FeignClient(name= "truck-service", path="/truck")
 //@RequestMapping("/car")
 public interface  TruckFeignClient {
     

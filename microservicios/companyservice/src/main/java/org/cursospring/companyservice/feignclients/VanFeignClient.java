@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "van-service", url = "http://localhost:8003/van")
+//, url = "http://localhost:8003/van"
+@FeignClient(name = "van-service", path = "/van")
 public interface VanFeignClient {
 
 
