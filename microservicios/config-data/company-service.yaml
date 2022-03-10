@@ -1,6 +1,6 @@
 server:
   port: 8001
- eureka:
+eureka:
   client:
     fetch-registry: true
     register-with-eureka: true 
