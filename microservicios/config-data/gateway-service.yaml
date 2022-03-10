@@ -18,14 +18,14 @@ spring:
           enabled: true
       routers:
         - id: company-service
-          uri: lb://company-service/
+          uri: lb://company-service
           predicates:
             - Path=/company/**
         - id: truck-service
-          uri: lb://truck-service/
+          uri: lb://truck-service
           predicates:
             - Path=/truck/**
         - id: van-service
-          uri: lb://van-service/
+          uri: lb://van-service
           predicates:
             - Path=/van/**
