@@ -29,3 +29,12 @@ spring:
           uri: lb://van-service
           predicates:
             - Path=/van/**
+
+management:
+  endpoint:
+    gateway:
+      enable: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
