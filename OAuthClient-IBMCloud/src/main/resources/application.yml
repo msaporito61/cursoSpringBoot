@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          appid:
+            clientId: 2d2d6cfe-92d6-4a13-ac2c-6c3c3cc504c3
+            clientSecret: MzY4MDI4YTQtNDhlMy00OWJmLTgyMGQtYTU3MzQ4NzY4MjM3
+            region: us-south
+            tenantId: e01406af-768f-4568-9fa3-3fcbaa9ceb6a
