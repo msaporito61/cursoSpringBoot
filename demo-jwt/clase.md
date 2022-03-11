@@ -1,0 +1,40 @@
+Spring Boot Security OAuth2
+
+- Creo el proyecto de Spring Boot con Maven
+- Agrego las Dependencias
+  - Devtools
+  - Web
+  - Lombok
+- Modifico la palicacion base
+  - @CrossOrigin(origins = "*") 
+  - @EnableAutoConfiguration
+  - @SpringBootApplication
+- Creo los siguientes paquetes
+  - api
+  - dto
+  - exceptions
+  - services
+  - util
+  - validator
+- Creo la clase api/AuthController
+- Creo la clase dto/JwtResponse
+  - De acuerdo a http://oauth.net/2/
+  - De acuerdo a http://oauth.com/oauth2-servers/access-tokens/access-token-response/
+- Creo la clase service/AuthService
+- Creo la clase security/JwtIOProperties
+- Agregar StarterDependencies spring-boot-configuration-processor
+- Modifico application.yml
+- Creo la clase utils/DateUtils
+- Creo la clase utils/GsonUtils
+  - Agrego la dependencia gson/google
+- Creo la clase exceptions/ApiUnauthorized
+- Creo la clase validator/AuthValidator
+  - Implemento en el AuthController
+  - Modifico el application.yml para reducir el error never/always
+- Implemento la dependencia Fusion JWT
+- Creo la clase security/JwtIO
+- Modifico el AuthService
+- Creo la clase security/InterceptorJwtIO
+- Creo la clase api/JwtController
+- Creo la clase InterceptorJwtIOConfig
+- 
